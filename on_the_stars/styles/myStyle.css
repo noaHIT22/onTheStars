@@ -1,0 +1,948 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+/*הגדרות כלליות לכל האתר
+*/body {
+    direction: rtl;
+    font-family: Assistant;
+    color:white;
+    background-color:black;
+    font-size:1.4vw;
+    width:1280px;
+    margin:0 auto;
+}
+/*תוכן הפסקאות*/
+p {
+    padding-right: 30px;
+    font-size: 1.4vw;
+    width: 80%;
+    font-weight: 300;
+}
+/*כותרות ראשיות*/
+h1 {
+    font-size: 6vw;
+    font-weight: 500;
+    text-align: center;
+}
+/*קישורים*/
+a {
+    color: white;
+}
+/*תפריט*/
+header {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#img_logo {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    margin-top: 10px;
+}
+#navMenu {
+    display: inline-block;
+    position: absolute;
+    margin: 0px;
+    width: 70%;
+    right: 170px;
+    top: 15px;
+}
+    #navMenu ul {
+        list-style: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0px;
+        background-color:black;
+        width:750px;
+    }
+        #navMenu ul li {
+            display: inline-block;
+            width: 140px;
+        }
+            #navMenu ul li a {
+                display: inline-block;
+                background-color: black;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                width: 140px;
+                height: 30px;
+                padding-top: 10px;
+            }
+                #navMenu ul li a:hover {
+                    background-color: darkslateblue;
+                }
+                #navMenu ul li a:active {
+                    background-color: darkblue;
+                }
+            #navMenu ul li ul {
+                display: none;
+                position: absolute;
+                padding-right: 0px;
+            }
+            #navMenu ul li:hover ul {
+                display: block;
+                width: 150px;
+            }
+            #navMenu ul li ul li a {
+                display: block;
+                float: none;
+                background-color: black;
+            }
+/*            איקס על קיושר מסויים
+*/.notActive {
+    cursor: not-allowed;
+}
+
+/*פירורי לחם
+*/
+
+#navBread ol li {
+    display:inline-block;
+}
+    #navBread ol li::after {
+        content:">";
+    }
+    #navBread ol li:last-child:after{
+        content:"";
+    }
+/*    מפת האתר
+*/
+.map {
+    width: 180px;
+    float: right;
+    margin-left: 70px;
+    padding-bottom: 60px;
+    padding-right:33px;
+}
+/*footer*/
+#footer {
+    background-image: url('../photos/footer_pic.jpg');
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#links_footer > a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#links_footer {
+    text-align: center;
+}
+
+#footer > a > img {
+    width: 20%;
+    height: auto;
+    position: relative;
+    right: 510px;
+    top: 10px;
+}
+
+#p_footer {
+    position: relative;
+    margin-right: 460px;
+}
+
+/*דף הבית
+*/
+/*כותרת הדף
+*/#h1_homePage {
+    font-size: 6vw;
+    font-weight: 500;
+    text-align:center;
+}
+/*הסרטון שבהתחלה
+*/video {
+   width: 80%;
+    height:auto;
+    position:relative;
+    right:120px;
+}
+/*  אייקונים בהתחלה
+*/
+#id>p>img {
+    display: inline-block;
+    width: 3%;
+    height: auto;
+    margin-right: 10px;
+    margin-top:5px;
+}
+/*כותרת משנית דף הבית
+*/
+.h2_homePage {
+    text-align: center;
+}
+/*תמונת רקע אחידה לכל הטקסטים
+*/.background_guides {
+    width: 25%;
+    height: auto;
+    position: relative;
+    margin-right: 76px;
+}
+/*  שלושת הטקסטים של המדריכים בדף הבית
+*/.Guides1 {
+    position: absolute;
+    width: 250px;
+    right: 110px;
+    top: 1260px;
+    text-align:center;
+}
+
+.Guides2 {
+    position: absolute;
+    width: 250px;
+    right: 512px;
+    top: 1265px;
+    text-align: center;
+}
+
+.Guides3 {
+    position: absolute;
+    width: 270px;
+    right: 910px;
+    top: 1260px;
+    text-align: center;
+}
+/*שלושת הכותרות של הטקטסים של המדריכים בדף הבית
+*/.h3_Guides1 {
+    position: absolute;
+    right: 105px;
+    bottom:285px;
+}
+
+.h3_Guides2 {
+    position: absolute;
+    right: 110px;
+    bottom: 310px;
+}
+
+.h3_Guides3 {
+    position: absolute;
+    right: 115px;
+    bottom: 305px;
+}
+/*/* טקסט משנה אחרי המדריכים בדף הבית
+*/.join_us{
+    text-align:center;
+margin-right:100px;
+  }
+/*תמונת רקע אחידה לכולם
+*/.background_tell {
+    width: 25%;
+    height: auto;
+    position: relative;
+    margin-right: 76px;
+}
+/*  שלושת הטקסטים של מספרים עלינו בדף הבית
+*/.tells_about_us1 {
+    position: absolute;
+    width: 250px;
+    right: 112px;
+    top: 1820px;
+    text-align: center;
+}
+
+.tells_about_us2 {
+    position: absolute;
+    width: 250px;
+    right: 515px;
+    top: 1820px;
+    text-align: center;
+}
+
+.tells_about_us3 {
+    position: absolute;
+    width: 250px;
+    right: 910px;
+    top: 1820px;
+    text-align: center;
+}
+/*שלושת הכותרות של מספרים עליו בדף הבית
+*/.h3_tell1 {
+    position: absolute;
+    right: 80px;
+    bottom: 255px;
+}
+
+.h3_tell2 {
+    position: absolute;
+    right: 80px;
+    bottom: 280px;
+}
+
+.h3_tell3 {
+    position: absolute;
+    right: 85px;
+    bottom: 280px;
+}
+/*לינקים בדף הבית בסוף
+*/#links {
+    margin: 20px;
+}
+/*  התמונות שביחד עם הלינקים בסוף דף הבית
+*/    #links > img {
+        width: 20%;
+        height: auto;
+        display:inline-block;
+        margin-right:125px;
+
+    }
+/*      הקישורים שבסוף דף הבית
+*/    #links > a {
+        display: inline-block;
+        text-align:center;
+    }
+/*      שלושת הקישורים בסוף דף הבית
+*/#a1 {
+    position:relative;
+    right:147px;
+}#a2 {
+    position:relative;
+    right:335px;
+}#a3 {
+    position:relative;
+    right:490px;
+}
+/*עמוד פנימי חבילות
+*/
+/*כותרת ראשית עמוד החבילות שלנו
+*/#h1_Packages {
+    position: absolute;
+    right: 420px;
+    font-size: 4.5vw;
+    font-weight: 300;
+}
+.h2_pacage{
+padding-right: 30px;
+}
+
+/*חבילות לזוגות
+*/
+/*תמונה של הזוגות
+*/ .Couples_pic {
+    width: 32%;
+    height: auto;
+    position: absolute;
+    right: 800px;
+    top: 270px;
+}
+/*  רקע אחיד לכל הטקסטים
+*/.background {
+    width: 20%;
+    height: auto;
+    position: relative;
+    margin-right: 110px;
+    top: 600px;
+}
+/*  מלל ראשי של הזוגות
+*/#Couples {
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    width: 700px;
+} 
+
+/*  מלל של החבילה הבסיסית של הזוגות
+*/.couples_basic{
+    position:absolute;
+    width:230px;
+    right:120px;
+    top:800px;
+    text-align:center;
+}
+/*מלל של החבילה המתקדמת בזוגות
+*/
+.couples_Advanced {
+    position: absolute;
+    width: 220px;
+    right: 490px;
+    top: 800px;
+    text-align: center;
+}
+/*  מלל של החבילה של המיטיבי לכת בזוגות
+*/
+.couples_Benefactors {
+    position: absolute;
+    width: 220px;
+    right: 861px;
+    top: 800px;
+    text-align: center;
+}
+/*שלושת הכותרות במלל של הזוגות
+*/.h3_couples1 {
+    position: absolute;
+    right:89px;
+    bottom:180px;
+}
+.h3_couples2 {
+    position: absolute;
+    right: 72px;
+    bottom: 162px;
+}
+.h3_couples3 {
+    position: absolute;
+    right: 70px;
+    bottom: 185px;
+}
+/*מלל בסוף הזוגות
+*/.Couples_extra {
+    position: absolute;
+    top:1050px;
+    margin-right:20px;
+}
+
+/*חבילות למשפחות
+*/
+
+#Families {
+    position: absolute;
+    top:1350px;
+    right: 20px;
+    width: 700px;
+}
+/*תמונה של משפחות
+*/.Families_pic {
+    width: 32%;
+    height: auto;
+    position: absolute;
+    right: 800px;
+    top: 1370px;
+}
+/*  תמונת רקע אחידה לכל הטקסטים
+*/.background1 {
+    width: 20%;
+    height: auto;
+    position: relative;
+    margin-right: 110px;
+    top: 1350px;
+}
+/*  מלל של החבילה הבסיסית של המשפחות
+*/.families_basic {
+    position: absolute;
+    width: 230px;
+    right: 125px;
+    top: 1905px;
+    text-align:center;
+}
+/*  מלל של החבילה של המתקדמים במשפחות
+*/
+.families_Advanced {
+    position: absolute;
+    width: 220px;
+    right: 499px;
+    top: 1905px;
+    text-align: center;
+}
+/*  מלל של החבילה של מיטבי הלכת במשפחות
+*/
+.families_Benefactors {
+    position: absolute;
+    width: 220px;
+    right: 870px;
+    top: 1905px;
+    text-align: center;
+}
+/*  כורות של כל המלל במשפחות
+*/.h3_families1 {
+    position: absolute;
+    right: 90px;
+    bottom: 182px;
+}
+
+.h3_families2 {
+    position: absolute;
+    right:70px;
+    bottom: 165px;
+}
+
+.h3_families3 {
+    position: absolute;
+    right: 68px;
+    bottom: 185px;
+}
+/*טקסט בסוף חלק המשפחות
+*/.Families_extra {
+    position: absolute;
+    top: 2170px;
+    margin-right: 20px;
+    width:1000px;
+}
+
+/*לקבוצות גדולות
+*/
+#Large_groups {
+    position: absolute;
+    top: 2280px;
+    right: 20px;
+    width:700px;
+}
+/*תמונה של חבורות גדולות
+*/.Large_groups_pic {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 800px;
+    top: 2270px;
+}
+/*  תמונת רקע אחידה לכל הטקסטים
+*/.background2 {
+    width: 20%;
+    height: auto;
+    position: relative;
+    margin-right: 110px;
+    top: 1870px;
+}
+/*  מלל של החבילה הבסיסית של הקבוצות הגדולות
+*/.Large_groups_basic {
+    position: absolute;
+    width: 230px;
+    right: 125px;
+    top: 2780px;
+    text-align:center;
+}
+/*  מלל של החבילה של המתקדמים בקבוצות הגדולות
+*/
+.Large_groups_Advanced {
+    position: absolute;
+    width: 220px;
+    right: 500px;
+    top: 2780px;
+    text-align: center;
+}
+/*  מלל של החבילה של מיטבי הלכת בקבוצות הגדולות
+*/
+.Large_groups_Benefactors {
+    position: absolute;
+    width: 220px;
+    right: 873px;
+    top: 2780px;
+    text-align: center;
+}
+/*הכותרות במלל של הקבוצות הגדולות
+*/.h3_Large_groups1 {
+    position: absolute;
+    right: 95px;
+    bottom: 180px;
+}
+
+.h3_Large_groups2 {
+    position: absolute;
+    right: 69px;
+    bottom: 165px;
+}
+
+.h3_Large_groups3 {
+    position: absolute;
+    right: 67px;
+    bottom: 165px;
+}
+/*מלל נוסף בסוף העמוד
+*/.Large_groups_extra {
+    position: absolute;
+    top: 3050px;
+    margin-right: 20px;
+}
+/*  סידור ספציפי של הפוטר בעמוד זה
+*/#pacage_footer > #footer {
+    margin-top: 1990px;
+}
+/*עמוד צור קשר
+*/
+/*תמונת רקע לעמוד
+*/
+#my_body {
+    background-image: url('../photos/Photo by guille pozzi on Unsplash.jpg');
+    background-repeat: no-repeat;
+    width: 1280px;
+    margin: 0 auto;
+    margin-left:200px;
+}
+/*  הגדרת אורך ורוחב לרקע השחור
+*/#ContactUs {
+    display:inline-block;
+    padding:20px;
+    margin-right:160px;
+    background-color: black;
+    width:70%;
+    height:570px;
+    position:relative;
+    bottom:45px;
+}
+/*  רווחים בכל מה שיש בתוך המלבן השחור
+*/#contact {
+    margin:5px;
+    padding-bottom:10px;
+}
+/*  הכותרת הראשית של צרו קשר
+*/#h1_contect {
+    font-size: 5vw;
+    font-weight: 600;
+    text-align:center;
+}
+/*  הגדרת צבע לטופס
+*/input {
+    color:black;
+    margin:10px;
+}
+/*  הגדרת צבע לטופס הנגלל
+*/select {
+    color: gray;
+}
+/*  לינק לחבילות של הזוגות
+*/
+#link1 {
+    background-image: url('../photos/couples_pic.jpg');
+    width: 190px;
+    height: auto;
+    transition: 3s;
+    font-weight: 500;
+}
+/*  אנימציה בלינק
+*/    #link1:hover {
+        width: 650px;
+    }
+/*      לינק לחבילות של המשפחות
+*/
+#link2 {
+    background-image: url('../photos/families_pic.jpg');
+    width: 190px;
+    height: auto;
+    transition: 3s;
+    font-weight: 500;
+}
+/*  אנימציה בלינק
+*/#link2:hover {
+    width: 650px;
+}
+/*  לינק לחבילות של הקבוצות הגדולות
+*/#link3 {
+    background-image: url('../photos/background.jpg');
+    width: 190px;
+    height: auto;
+    transition: 3s;
+    font-weight: 500;
+}
+/*  אנימציה בלינק
+*/#link3:hover {
+    width: 650px;
+}
+/*על החלל*/
+/*כותרת ראשית*/
+#headlineOnSpace {
+    background-image: url('../photos/Photo by Daniel Mayo on Unsplash.jpg');
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+/*כותרות משניות*/
+.onSpaceH2 {
+    font-size: 4vw;
+    font-weight: 400;
+    text-align: center;
+}
+/*כותרות לכדור הארץ*/
+.indexH3 {
+    padding-right: 30px;
+    font-weight: 500;
+    font-size: 2vw;
+}
+/*תחילת כל חלק- כיתוב*/
+.introw {
+    font-size: 1.8vw;
+    font-weight: 400;
+    width: 420px;
+}
+/*תחילת חלק כדור הארץ- תמונה*/
+#earth {
+    background-image: url('../photos/nasa-vhSz50AaFAs-unsplash.jpg');
+    background-repeat: no-repeat;
+    width: 90%;
+    height: auto;
+    background-size: 45%;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+/*תחילת חלק כדור הארץ- מידע*/
+#earthIntrow {
+    margin-right: 10px;
+    padding-top: 10px;
+}
+/*וידיאו על כדור הארץ*/
+.earthInfo > video {
+    margin-right: 110px;
+}
+/*כותרות מידע נוסף על כדור הארץ*/
+.earthInfo > h3 {
+    padding-top: 40px;
+}
+/*מיקום מידע על כדור הארץ*/
+.earthInfo > p {
+    padding-top: 10px;
+}
+/*מידע כדור הארץ לצד וידיאו*/
+.earthInfo {
+    width: 45%;
+    height: 400px;
+    display: inline-block;
+}
+/*תחילת חלק ירח- תמונה*/
+#moon {
+    background-image: url('../photos/theMoon.jpg');
+    background-repeat: no-repeat;
+    width: 85%;
+    height: auto;
+    background-size: 75%;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    padding-right: 70px;
+}
+
+/*מידע על הירח- 2 סוגים של ירחים*/
+.moonInfo {
+    width: 40%;
+    height: 400px;
+    display: inline-block;
+    padding: 50px;
+}
+/*תחילת חלק בערפלית-תמונה*/
+#mist {
+    background-image: url('../photos/mist.jpg');
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+/*הצגת החלקים ערפילית והזוהר הצפוני*/
+.introwBotoom {
+    font-size: 1.8vw;
+    font-weight: 400;
+    width: 420px;
+    position: relative;
+    padding-top: 30px;
+}
+/*ערפילית מידע*/
+#mistInfo {
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+
+/*הזוהר הצפוני תמונת רקע*/
+#theNorthernLights {
+    background-image: url('../photos/Photo by v2osk on Unsplash.jpg');
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+/*דף אודות*/
+#odot {
+    background-image: url('../photos/Photo by Free Nature Stock on Unsplash.jpg');
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+}
+/*הגדרת רקע שחור ואיזור כתיבה*/
+#containerOdot {
+    display: inline-block;
+    padding: 30px;
+    margin-right: 35px;
+    background-color: black;
+    width: 90%;
+    margin-bottom:50px;
+}
+/*תוכן*/
+.aboutWeb {
+    position: relative;
+    margin-bottom: 10px;
+    width: 56%;
+}
+/*כותרות משניות*/
+.titleAbout2 {
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+}
+/*משפט סיכום*/
+#sumsen {
+    font-size: 3vw;
+    font-weight: 400;
+    text-align: center;
+    width: 600px;
+    margin-right: 220px;
+}
+/*תמונות*/
+#ourPicturs > img {
+    position: absolute;
+    display: block;
+    margin-right: 900px;
+    width: 15%;
+}
+
+#amit {
+    margin-top: 400px;
+}
+
+#noa {
+    margin-top: 100px;
+}
+
+#ourPicturs > span {
+    display: inline-block;
+    text-align: center;
+}
+
+#noaName {
+    position: relative;
+    right: 960px;
+    top: 300px;
+}
+
+#amitName {
+    position: relative;
+    right: 870px;
+    top: 560px;
+}
+
+#hitLogo {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 1120px;
+    right: 90px;
+}
+/*דף מפת אתר*/
+/*הגדרת רקע*/
+#map {
+    background-image: url('../photos/Photo by Wil Stewart on Unsplash.jpg');
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+}
+
+/*איזור רקע שחור*/
+#containerMap {
+    display: inline-block;
+    padding: 30px;
+    margin-right: 35px;
+    background-color: black;
+    width: 90%;
+    height: 300px;
+}
+/*גלריה*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    width:35%;
+    height:auto;
+    right:400px;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    position:relative;
+}
+#caption {
+    position: relative;
+    padding-right: 90px;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+margin-right:410px;
+}
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+   color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.5;
+}
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
